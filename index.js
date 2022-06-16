@@ -5,7 +5,7 @@
 //- Output a list displaying each item and its price
 //- Output the total at the end
 
-let products = ["Milk" + +  1.20, "Cocoa", "Salad", "Carrots", "Tomatoes", "Ready meals"]
+let products = ["Milk", "Cocoa", "Salad", "Carrots", "Tomatoes", "Ready meals"]
 
 products.push("Banana")
 products.push("Orange")
@@ -13,6 +13,21 @@ products.push("Orange")
 for (let product of products) {
     console.log(`${product}`)
 }
+
+let prices = [1.20, 2.00, 2.00, 2.00, 2.50, 5.00, 1.50, 1.10]
+
+let total = 0
+for (let price of prices) {
+   console.log(`${price}`)
+}
+
+for (let price of prices) {
+    console.log(`
+    Current Total: ${total}
+    Adding Price: ${price}
+    `)
+    total =+ price
+ }
 
 
 
