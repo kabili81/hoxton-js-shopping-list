@@ -26,7 +26,7 @@ for (let price of prices) {
     Current Total: ${total}
     Adding Price: ${price}
     `)
-    total =+ price
+    total += price
     console.log(`Latest total: ${total}`)
  }
 
